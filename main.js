@@ -60,7 +60,8 @@
     nav.classList.toggle('scrolled', y > 30);
     px.forEach(function(el){
       var d = parseFloat(el.getAttribute('data-depth'));
-      if (el.classList.contains('castles')) el.style.transform = 'translateY(' + (y * d) + 'px)';
+      if (el.classList.contains('army-bg')) { var r = el.parentNode.getBoundingClientRect(); el.style.transform = 'translateY(' + (r.top * -d) + 'px)'; }
+      else if (el.classList.contains('castles') || el.classList.contains('hero-bg')) el.style.transform = 'translateY(' + (y * d) + 'px)';
       else el.style.translate = '0 ' + (y * d * -0.3) + 'px';
     });
     ticking = false;
@@ -99,6 +100,20 @@
   strip.addEventListener('mousedown', function(e){down = true; sx = e.pageX; sl = strip.scrollLeft; strip.classList.add('drag');});
   window.addEventListener('mouseup', function(){down = false; strip.classList.remove('drag');});
   strip.addEventListener('mousemove', function(e){if(!down) return; e.preventDefault(); strip.scrollLeft = sl - (e.pageX - sx) * 1.4;});
+
+  // lightbox
+  var lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  var cards = all('.lore-card'), cur = 0, moved = false;
+  strip.addEventListener('mousedown', function(e){moved = false; sx = e.pageX;});
+  strip.addEventListener('mousemove', function(e){if (down && Math.abs(e.pageX - sx) > 6) moved = true;});
+  function openLb(i){cur = (i + cards.length) % cards.length; var c = cards[cur]; lbImg.src = c.getAttribute('data-full'); lbImg.alt = c.querySelector('img').alt; lbCap.textContent = c.querySelector('b').textContent; lb.classList.add('open');}
+  function closeLb(){lb.classList.remove('open');}
+  cards.forEach(function(c, i){c.addEventListener('click', function(){if (!moved) openLb(i);});});
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  document.getElementById('lbPrev').addEventListener('click', function(e){e.stopPropagation(); openLb(cur - 1);});
+  document.getElementById('lbNext').addEventListener('click', function(e){e.stopPropagation(); openLb(cur + 1);});
+  lb.addEventListener('click', function(e){if (e.target === lb) closeLb();});
+  document.addEventListener('keydown', function(e){if (!lb.classList.contains('open')) return; if (e.key === 'Escape') closeLb(); if (e.key === 'ArrowLeft') openLb(cur - 1); if (e.key === 'ArrowRight') openLb(cur + 1);});
 
   // embers canvas
   var cv = document.getElementById('embers'), ctx = cv.getContext('2d'), W, H, P = [];

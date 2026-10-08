@@ -40,6 +40,7 @@
 <main>
 <!-- HERO -->
 <section id="hero" class="hero">
+  <div class="hero-bg" data-depth="0.25" aria-hidden="true"></div>
   <svg class="castles castles-back" data-depth="0.15" viewBox="0 0 1600 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M0 400V260l40-10v-60h14v-20l10-30 10 30v20h14v70l60 10v-90h10l12-40 12 40h10v110l80-20v-50h20v-40l16-50 16 50v40h20v80l90 10V180h12v-30l14-45 14 45v30h12v110l70-10v-40h30v40l60 10V120h10V90l18-60 18 60v30h10v190l80-20v-70h20l10-30 10 30h20v90l90-10v-60h14l12-36 12 36h14v70l70 10V200h12v-40l16-50 16 50v40h12v120l90-20v-40h30v50l70 10V0 400z" fill="#140e14"/></svg>
   <svg class="castles castles-front" data-depth="0.3" viewBox="0 0 1600 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M0 300V210h30v-20h20v20h20v-20h20v20h20v-20h20v20h30v-60h16l14-40 14 40h16v90h60v-30h20v-30h14v-14h12v14h14v30h20v30h80V120h14l20-60 20 60h14v120h70v-20h20v20h20v-20h20v20h20v-20h20v20h70v-70h14l14-34 14 34h14v80h90v-40h40v40h60V140h14l18-52 18 52h14v110h80v-30h20v-20h20v20h20v30h70v-80h14l12-30 12 30h14v90h60v-20h20v20h20v-20h20v20h30v90z" fill="#0b080c"/></svg>
   <div class="hero-inner">
@@ -65,7 +66,7 @@
       <div class="runes"></div>
       <div class="tilt hero-frame"><img src="/assets/img/owl-knight.webp" alt="owl wif sword, a baby owl in silver armor with a glowing sword" width="900" height="900"></div>
       <img class="float-chip chip-1" data-depth="0.6" src="/assets/img/owl-gaze.webp" alt="" loading="lazy">
-      <img class="float-chip chip-2" data-depth="-0.5" src="/assets/img/owl-moonlit.webp" alt="" loading="lazy">
+      <img class="float-chip chip-2" data-depth="-0.5" src="/assets/img/owl-moonguard.webp" alt="" loading="lazy">
     </div>
   </div>
   <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
@@ -77,7 +78,7 @@
 <section id="about" class="section about">
   <div class="container about-grid">
     <div class="about-art reveal">
-      <div class="tilt frame-ornate"><img src="/assets/img/owl-rampart.webp" alt="The owl knight standing guard on the castle ramparts" loading="lazy" width="882" height="724"></div>
+      <div class="tilt frame-ornate"><img src="/assets/img/owl-wisdom.webp" alt="The owl knight reading a glowing rune book in a candlelit library" loading="lazy" width="1280" height="720"></div>
       <div class="tilt frame-ornate small"><img src="/assets/img/owl-gaze.webp" alt="The watchful gaze of the owl knight" loading="lazy"></div>
     </div>
     <div class="about-copy">
@@ -98,15 +99,16 @@
 <section id="lore" class="section lore">
   <div class="container">
     <h2 class="section-title slash center">The Chronicle</h2>
-    <p class="section-sub center reveal">Scenes from the saga of the smallest knight in the realm.</p>
+    <p class="section-sub center reveal">Scenes from the saga of the smallest knight in the realm. Drag to explore, click to enlarge.</p>
   </div>
   <div class="lore-strip" id="loreStrip">
-    <figure class="lore-card tilt reveal"><img src="/assets/img/citadel-dusk.webp" alt="" loading="lazy"><figcaption><b>I. The Citadel</b><span>High above the mist, the castles keep their watch.</span></figcaption></figure>
-    <figure class="lore-card tilt reveal"><img src="/assets/img/glowing-blade.webp" alt="" loading="lazy"><figcaption><b>II. The Blade</b><span>A sword that glows brighter as doubt grows darker.</span></figcaption></figure>
-    <figure class="lore-card tilt reveal"><img src="/assets/img/owl-moonlit.webp" alt="" loading="lazy"><figcaption><b>III. The Night Watch</b><span>Under the moon, big eyes see every move.</span></figcaption></figure>
-    <figure class="lore-card tilt reveal"><img src="/assets/img/owl-ember.webp" alt="" loading="lazy"><figcaption><b>IV. The Golden Oath</b><span>Wrapped in an aura of gold, the knight swears to hold the line.</span></figcaption></figure>
-    <figure class="lore-card tilt reveal"><img src="/assets/img/river-vale.webp" alt="" loading="lazy"><figcaption><b>V. The River Vale</b><span>Beyond the cliffs lies the realm worth defending.</span></figcaption></figure>
-    <figure class="lore-card tilt reveal"><img src="/assets/img/owl-rampart.webp" alt="" loading="lazy"><figcaption><b>VI. The Standard</b><span>Banners raised, the owl stands where others fall.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal" data-full="/assets/img/owl-charge.webp"><img src="/assets/img/owl-charge.webp" alt="I. The Charge" loading="lazy"><figcaption><b>I. The Charge</b><span>Blade ablaze, the little knight rides out against the dark.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal" data-full="/assets/img/citadel-dusk.webp"><img src="/assets/img/citadel-dusk.webp" alt="II. The Citadel" loading="lazy"><figcaption><b>II. The Citadel</b><span>High above the mist, the castles keep their watch.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal" data-full="/assets/img/owl-wisdom.webp"><img src="/assets/img/owl-wisdom.webp" alt="III. The Rune Book" loading="lazy"><figcaption><b>III. The Rune Book</b><span>Before every battle, the owl reads what the ancients wrote.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal" data-full="/assets/img/owl-moonguard.webp"><img src="/assets/img/owl-moonguard.webp" alt="IV. The Night Watch" loading="lazy"><figcaption><b>IV. The Night Watch</b><span>Under the full moon, big eyes see every move.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal" data-full="/assets/img/owl-sunrise.webp"><img src="/assets/img/owl-sunrise.webp" alt="V. The Golden Dawn" loading="lazy"><figcaption><b>V. The Golden Dawn</b><span>A sword raised to the sun, an oath sworn to the light.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal" data-full="/assets/img/owl-army.webp"><img src="/assets/img/owl-army.webp" alt="VI. The Order Marches" loading="lazy"><figcaption><b>VI. The Order Marches</b><span>One owl became many. Banners high, the order crosses the bridge.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal" data-full="/assets/img/owl-rampart.webp"><img src="/assets/img/owl-rampart.webp" alt="VII. The Standard" loading="lazy"><figcaption><b>VII. The Standard</b><span>Banners raised, the owl stands where others fall.</span></figcaption></figure>
   </div>
 </section>
 
@@ -121,15 +123,15 @@
         <div class="step-body"><h3><i class="ico ico-phantom"></i>Create a Wallet</h3><p>Download Phantom from phantom.com or your app store and create a Solana wallet. Write down your recovery phrase and keep it private.</p><a href="https://phantom.com/download" target="_blank" rel="noopener" class="step-link">Get Phantom</a></div>
       </article>
       <article class="step tilt reveal">
-        <div class="step-img"><img src="/assets/img/owl-moonlit.webp" alt="" loading="lazy"><span class="step-num">II</span></div>
+        <div class="step-img"><img src="/assets/img/owl-moonguard.webp" alt="" loading="lazy"><span class="step-num">II</span></div>
         <div class="step-body"><h3><i class="ico ico-sol"></i>Get Some SOL</h3><p>Buy SOL inside Phantom or on an exchange and send it to your Phantom address. A small amount of SOL covers network fees.</p></div>
       </article>
       <article class="step tilt reveal">
-        <div class="step-img"><img src="/assets/img/glowing-blade.webp" alt="" loading="lazy"><span class="step-num">III</span></div>
+        <div class="step-img"><img src="/assets/img/owl-charge.webp" alt="" loading="lazy"><span class="step-num">III</span></div>
         <div class="step-body"><h3><i class="ico ico-pump"></i>Go to PumpSwap</h3><p>Open swap.pump.fun, connect Phantom, and paste the $SWORDOWL contract address as the token to buy. Always double check the address.</p><a href="#" target="_blank" rel="noopener" class="step-link js-buy">Open PumpSwap</a></div>
       </article>
       <article class="step tilt reveal">
-        <div class="step-img"><img src="/assets/img/owl-ember.webp" alt="" loading="lazy"><span class="step-num">IV</span></div>
+        <div class="step-img"><img src="/assets/img/owl-wisdom.webp" alt="" loading="lazy"><span class="step-num">IV</span></div>
         <div class="step-body"><h3><i class="ico ico-sword"></i>Swap for $SWORDOWL</h3><p>Enter the amount of SOL, confirm the swap in Phantom, and $SWORDOWL lands in your wallet in seconds. Welcome to the order.</p></div>
       </article>
     </div>
@@ -148,7 +150,7 @@
     <p class="section-sub center reveal">Live $SWORDOWL chart, powered by DexScreener.</p>
     <div class="chart-frame reveal" id="chartFrame">
       <div class="chart-soon" id="chartSoon">
-        <img src="/assets/img/citadel-dusk.webp" alt="" loading="lazy">
+        <img src="/assets/img/owl-sunrise.webp" alt="" loading="lazy">
         <div class="chart-soon-inner">
           <i class="ico ico-dex big"></i>
           <h3>The chart goes live at launch</h3>
@@ -160,6 +162,20 @@
     <div class="chart-links reveal">
       <a class="btn btn-ghost js-dex" href="#" target="_blank" rel="noopener"><i class="ico ico-dex"></i>Open DexScreener</a>
       <a class="btn btn-gold js-buy" href="#" target="_blank" rel="noopener"><i class="ico ico-pump"></i>Buy on PumpSwap</a>
+    </div>
+  </div>
+</section>
+
+<!-- ARMY FEATURE -->
+<section class="army" id="order" aria-label="The order of owl knights">
+  <div class="army-bg" data-depth="0.12" style="background-image:url(/assets/img/owl-army.webp)"></div>
+  <div class="army-inner container">
+    <p class="eyebrow reveal">One owl became an army</p>
+    <h2 class="section-title slash">The Order Marches</h2>
+    <p class="army-copy reveal">Every holder is a knight. Every knight carries a blade. Together the order of $SWORDOWL crosses the bridge into the light, banners high and eyes wide open.</p>
+    <div class="hero-ctas reveal">
+      <a class="btn btn-gold js-buy" href="#" target="_blank" rel="noopener"><i class="ico ico-pump"></i>Enlist on PumpSwap</a>
+      <a class="btn btn-ghost js-x" href="#" target="_blank" rel="noopener"><i class="ico ico-x"></i>Join on X</a>
     </div>
   </div>
 </section>
@@ -186,6 +202,7 @@
   <p class="copy">&copy; 2026 owl wif sword. Forged on Solana.</p>
 </footer>
 <div class="toast" id="toast">Copied</div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer"><button class="lb-close" id="lbClose" aria-label="Close">&times;</button><button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button><figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure><button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8250;</button></div>
 <script src="/main.js" defer></script>
 </body>
 </html>
