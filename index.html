@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>owl wif sword | $SWORDOWL on Solana</title>
+<meta name="description" content="owl wif sword ($SWORDOWL) - the fearless little owl knight of Solana. Wisdom, courage, and a little meme magic.">
+<meta property="og:title" content="owl wif sword | $SWORDOWL">
+<meta property="og:description" content="The fearless little owl knight of Solana.">
+<meta property="og:image" content="/assets/img/owl-knight.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script src="/config.js"></script>
+</head>
+<body>
+<canvas id="embers" aria-hidden="true"></canvas>
+<div class="bg-texture" aria-hidden="true"></div>
+<div class="fog fog-1" aria-hidden="true"></div>
+<div class="fog fog-2" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="#hero" class="brand"><img src="/assets/img/owl-knight.webp" alt="" width="40" height="40"><span>owl wif sword</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#lore">Lore</a>
+    <a href="#howtobuy">How to Buy</a>
+    <a href="#chart">Chart</a>
+    <a href="#joinus">Join Us</a>
+    <a class="btn btn-gold nav-cta js-buy" href="#" target="_blank" rel="noopener">Buy $SWORDOWL</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="hero" class="hero">
+  <svg class="castles castles-back" data-depth="0.15" viewBox="0 0 1600 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M0 400V260l40-10v-60h14v-20l10-30 10 30v20h14v70l60 10v-90h10l12-40 12 40h10v110l80-20v-50h20v-40l16-50 16 50v40h20v80l90 10V180h12v-30l14-45 14 45v30h12v110l70-10v-40h30v40l60 10V120h10V90l18-60 18 60v30h10v190l80-20v-70h20l10-30 10 30h20v90l90-10v-60h14l12-36 12 36h14v70l70 10V200h12v-40l16-50 16 50v40h12v120l90-20v-40h30v50l70 10V0 400z" fill="#140e14"/></svg>
+  <svg class="castles castles-front" data-depth="0.3" viewBox="0 0 1600 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M0 300V210h30v-20h20v20h20v-20h20v20h20v-20h20v20h30v-60h16l14-40 14 40h16v90h60v-30h20v-30h14v-14h12v14h14v30h20v30h80V120h14l20-60 20 60h14v120h70v-20h20v20h20v-20h20v20h20v-20h20v20h70v-70h14l14-34 14 34h14v80h90v-40h40v40h60V140h14l18-52 18 52h14v110h80v-30h20v-20h20v20h20v30h70v-80h14l12-30 12 30h14v90h60v-20h20v20h20v-20h20v20h30v90z" fill="#0b080c"/></svg>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">The Knight of Solana</p>
+      <h1 class="title reveal"><span>owl</span> <span>wif</span> <span>sword</span></h1>
+      <p class="ticker-sym reveal">$SWORDOWL</p>
+      <p class="hero-sub reveal">Big eyes watch every move. A sharp sword answers every challenge. Wisdom, courage, and a little meme magic for the battlefield.</p>
+      <div class="ca-box reveal">
+        <span class="ca-label">CA</span>
+        <code class="ca-value js-ca">Coming soon</code>
+        <button class="copy-btn js-copy" type="button">Copy</button>
+      </div>
+      <div class="hero-ctas reveal">
+        <a class="btn btn-gold js-buy" href="#" target="_blank" rel="noopener"><i class="ico ico-pump"></i>Buy on PumpSwap</a>
+        <a class="btn btn-ghost js-dex" href="#" target="_blank" rel="noopener"><i class="ico ico-dex"></i>DexScreener</a>
+        <a class="btn btn-ghost js-x" href="#" target="_blank" rel="noopener"><i class="ico ico-x"></i>Follow</a>
+      </div>
+    </div>
+    <div class="hero-art reveal">
+      <div class="aura"></div>
+      <div class="aura aura-2"></div>
+      <div class="runes"></div>
+      <div class="tilt hero-frame"><img src="/assets/img/owl-knight.webp" alt="owl wif sword, a baby owl in silver armor with a glowing sword" width="900" height="900"></div>
+      <img class="float-chip chip-1" data-depth="0.6" src="/assets/img/owl-gaze.webp" alt="" loading="lazy">
+      <img class="float-chip chip-2" data-depth="-0.5" src="/assets/img/owl-moonlit.webp" alt="" loading="lazy">
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="container about-grid">
+    <div class="about-art reveal">
+      <div class="tilt frame-ornate"><img src="/assets/img/owl-rampart.webp" alt="The owl knight standing guard on the castle ramparts" loading="lazy" width="882" height="724"></div>
+      <div class="tilt frame-ornate small"><img src="/assets/img/owl-gaze.webp" alt="The watchful gaze of the owl knight" loading="lazy"></div>
+    </div>
+    <div class="about-copy">
+      <h2 class="section-title slash">About the Knight</h2>
+      <p class="lead reveal">Inspired by the "Superintelligence Owl" shared by Elon Musk, owl wif sword turns a symbol of intelligence into a fearless little knight.</p>
+      <p class="reveal">Wearing silver armor and wielding a glowing blade, this owl stands strong against chaos, doubt, and the darkness ahead. Big eyes watch every move. A sharp sword answers every challenge.</p>
+      <p class="reveal">Wrapped in a golden aura, it brings wisdom, courage, and a little meme magic to the battlefield.</p>
+      <div class="virtues">
+        <div class="virtue tilt reveal"><b>Wisdom</b><span>Born of the owl</span></div>
+        <div class="virtue tilt reveal"><b>Courage</b><span>Forged in silver</span></div>
+        <div class="virtue tilt reveal"><b>Solana</b><span>Swift as the blade</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LORE / GALLERY -->
+<section id="lore" class="section lore">
+  <div class="container">
+    <h2 class="section-title slash center">The Chronicle</h2>
+    <p class="section-sub center reveal">Scenes from the saga of the smallest knight in the realm.</p>
+  </div>
+  <div class="lore-strip" id="loreStrip">
+    <figure class="lore-card tilt reveal"><img src="/assets/img/citadel-dusk.webp" alt="" loading="lazy"><figcaption><b>I. The Citadel</b><span>High above the mist, the castles keep their watch.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal"><img src="/assets/img/glowing-blade.webp" alt="" loading="lazy"><figcaption><b>II. The Blade</b><span>A sword that glows brighter as doubt grows darker.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal"><img src="/assets/img/owl-moonlit.webp" alt="" loading="lazy"><figcaption><b>III. The Night Watch</b><span>Under the moon, big eyes see every move.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal"><img src="/assets/img/owl-ember.webp" alt="" loading="lazy"><figcaption><b>IV. The Golden Oath</b><span>Wrapped in an aura of gold, the knight swears to hold the line.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal"><img src="/assets/img/river-vale.webp" alt="" loading="lazy"><figcaption><b>V. The River Vale</b><span>Beyond the cliffs lies the realm worth defending.</span></figcaption></figure>
+    <figure class="lore-card tilt reveal"><img src="/assets/img/owl-rampart.webp" alt="" loading="lazy"><figcaption><b>VI. The Standard</b><span>Banners raised, the owl stands where others fall.</span></figcaption></figure>
+  </div>
+</section>
+
+<!-- HOW TO BUY -->
+<section id="howtobuy" class="section howtobuy">
+  <div class="container">
+    <h2 class="section-title slash center">How to Buy</h2>
+    <p class="section-sub center reveal">Four steps to join the order of $SWORDOWL.</p>
+    <div class="steps">
+      <article class="step tilt reveal">
+        <div class="step-img"><img src="/assets/img/owl-gaze.webp" alt="" loading="lazy"><span class="step-num">I</span></div>
+        <div class="step-body"><h3><i class="ico ico-phantom"></i>Create a Wallet</h3><p>Download Phantom from phantom.com or your app store and create a Solana wallet. Write down your recovery phrase and keep it private.</p><a href="https://phantom.com/download" target="_blank" rel="noopener" class="step-link">Get Phantom</a></div>
+      </article>
+      <article class="step tilt reveal">
+        <div class="step-img"><img src="/assets/img/owl-moonlit.webp" alt="" loading="lazy"><span class="step-num">II</span></div>
+        <div class="step-body"><h3><i class="ico ico-sol"></i>Get Some SOL</h3><p>Buy SOL inside Phantom or on an exchange and send it to your Phantom address. A small amount of SOL covers network fees.</p></div>
+      </article>
+      <article class="step tilt reveal">
+        <div class="step-img"><img src="/assets/img/glowing-blade.webp" alt="" loading="lazy"><span class="step-num">III</span></div>
+        <div class="step-body"><h3><i class="ico ico-pump"></i>Go to PumpSwap</h3><p>Open swap.pump.fun, connect Phantom, and paste the $SWORDOWL contract address as the token to buy. Always double check the address.</p><a href="#" target="_blank" rel="noopener" class="step-link js-buy">Open PumpSwap</a></div>
+      </article>
+      <article class="step tilt reveal">
+        <div class="step-img"><img src="/assets/img/owl-ember.webp" alt="" loading="lazy"><span class="step-num">IV</span></div>
+        <div class="step-body"><h3><i class="ico ico-sword"></i>Swap for $SWORDOWL</h3><p>Enter the amount of SOL, confirm the swap in Phantom, and $SWORDOWL lands in your wallet in seconds. Welcome to the order.</p></div>
+      </article>
+    </div>
+    <div class="ca-box ca-wide reveal">
+      <span class="ca-label">Contract</span>
+      <code class="ca-value js-ca">Coming soon</code>
+      <button class="copy-btn js-copy" type="button">Copy</button>
+    </div>
+  </div>
+</section>
+
+<!-- CHART -->
+<section id="chart" class="section chart">
+  <div class="container">
+    <h2 class="section-title slash center">The War Map</h2>
+    <p class="section-sub center reveal">Live $SWORDOWL chart, powered by DexScreener.</p>
+    <div class="chart-frame reveal" id="chartFrame">
+      <div class="chart-soon" id="chartSoon">
+        <img src="/assets/img/citadel-dusk.webp" alt="" loading="lazy">
+        <div class="chart-soon-inner">
+          <i class="ico ico-dex big"></i>
+          <h3>The chart goes live at launch</h3>
+          <p>The blade is being sharpened. Once the contract is revealed, the live DexScreener chart will appear right here.</p>
+          <a class="btn btn-ghost js-x" href="#" target="_blank" rel="noopener"><i class="ico ico-x"></i>Watch for the reveal</a>
+        </div>
+      </div>
+    </div>
+    <div class="chart-links reveal">
+      <a class="btn btn-ghost js-dex" href="#" target="_blank" rel="noopener"><i class="ico ico-dex"></i>Open DexScreener</a>
+      <a class="btn btn-gold js-buy" href="#" target="_blank" rel="noopener"><i class="ico ico-pump"></i>Buy on PumpSwap</a>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN US -->
+<section id="joinus" class="section joinus">
+  <div class="container">
+    <h2 class="section-title slash center">Join the Order</h2>
+    <p class="section-sub center reveal">Raise your blade. The realm needs every knight.</p>
+    <div class="banner-wrap reveal tilt"><img src="/assets/img/banner.webp" alt="owl wif sword banner" loading="lazy" width="1800" height="600"></div>
+    <div class="socials reveal">
+      <a class="social js-x" href="#" target="_blank" rel="noopener"><i class="ico ico-x big"></i><span>X / Twitter</span></a>
+      <a class="social js-dex" href="#" target="_blank" rel="noopener"><i class="ico ico-dex big"></i><span>DexScreener</span></a>
+      <a class="social js-buy" href="#" target="_blank" rel="noopener"><i class="ico ico-pump big"></i><span>PumpSwap</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <img src="/assets/img/owl-knight.webp" alt="" width="56" height="56">
+  <p class="footer-name">owl wif sword <span>$SWORDOWL</span></p>
+  <p class="disclaimer">$SWORDOWL is a meme coin with no intrinsic value or expectation of financial return. It is for entertainment only. Not financial advice.</p>
+  <p class="copy">&copy; 2026 owl wif sword. Forged on Solana.</p>
+</footer>
+<div class="toast" id="toast">Copied</div>
+<script src="/main.js" defer></script>
+</body>
+</html>
